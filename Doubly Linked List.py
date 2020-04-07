@@ -69,6 +69,14 @@ class DoublyLinkedList:
                     return
             else:
                 print("invalid position")
+    #length of the list
+    def listlength(self):
+        c=0
+        node=self.head
+        while(node):
+            c+=1
+            node=node.next
+        print("length of the list={}".format(c))
     #searching an elment in the list
     def search(self,x):
         search_node=self.head
@@ -136,6 +144,7 @@ dllist.insert_end(6)
 dllist.insert_after_element(6,7)
 dllist.insert_after_position(8,8)
 dllist.display()  
+dllist.listlength()
 dllist.search(2)
 dllist.delete_front()
 dllist.delete_end()
